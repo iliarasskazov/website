@@ -58,6 +58,10 @@ def main():
             known[t] = {"doi": None, "score": round(best_score, 3),
                         "matched": (best.get("title") or [""])[0] if best else None}
             print(f"  MISS {best_score:.2f}  {t[:55]!r}")
+            if best and best_score >= 0.75:
+                # near miss: usually means OUR title is stale, not that Crossref is wrong
+                print(f"         candidate: {best.get('DOI')}")
+                print(f"         titled   : {(best.get('title') or [''])[0][:70]!r}")
         time.sleep(0.25)
 
     json.dump(known, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False, sort_keys=True)
