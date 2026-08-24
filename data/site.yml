@@ -1,0 +1,119 @@
+# Public site content. Mirrors the public-safe subset of career/data/profile.yml.
+# Regenerate the mirrored fields with:  python3 ../career/bin/sync-site.py
+# Nothing private (compensation, strategy, IP notes) belongs in this file --
+# this repo is PUBLIC.
+
+name: Ilia L. Rasskazov
+short_name: Ilia Rasskazov
+credential: PhD
+role_line: Computational Physicist
+tagline: Simulation infrastructure for physical science
+location: San Jose, California
+email: il.rasskazov@gmail.com
+
+# Set once the GitHub repo exists; the footer link is omitted while this is null.
+repo_url: null
+
+links:
+  - {label: Google Scholar, url: "https://scholar.google.com/citations?user=jCpbgOEAAAAJ"}
+  - {label: LinkedIn,       url: "https://linkedin.com/in/iliarasskazov"}
+  - {label: GitLab,         url: "https://gitlab.com/iliarasskazov"}
+  - {label: multilayer.app, url: "https://multilayer.app"}
+
+metrics:
+  - {value: "49",    label: publications}
+  - {value: "1,187", label: citations}
+  - {value: "21",    label: h-index}
+  - {value: "200+",  label: peer reviews}
+
+lede: >
+  I build the simulation software that scientific and engineering teams make
+  decisions with.
+
+about:
+  - >
+    Twelve years of taking physics-based models from theory into production, split
+    between academia and industry. At Tandem PV I develop a new class of bankable
+    simulation software for perovskite-silicon tandem modules — models that do not
+    only have to be right, they have to survive independent third-party technical due
+    diligence before anyone will underwrite the technology. I process and analyse
+    outdoor field data, build and calibrate the underlying physical models, and feed
+    the results back into device design.
+  - >
+    Before that: large-scale electromagnetic simulation on HPC clusters and cloud at
+    KLA, and inverse design of manufacturable low-emissivity coatings at SunDensity.
+  - >
+    The thread through all of it is infrastructure. I write tools that other people
+    use — an open-source scattering package the community cites as working tooling,
+    and a thin-film optics platform that checks published spectra against recomputed
+    ones. Recent research applies deep learning to measurement inversion in infrared
+    microspectroscopy: physics-informed ML as a solver for the physics, not a
+    replacement for it.
+
+software:
+  - name: multilayer.app
+    url: https://multilayer.app
+    blurb: >
+      Thin-film optics platform built on a transfer-matrix core, with a replication
+      engine that recomputes spectra from published papers and scores reproduction fit
+      against digitized curves — span-normalized RMSE with a maximum-deviation guard,
+      plus provenance grading of every optical input.
+    meta: Python, FastAPI, React, Pyodide/WASM
+
+  - name: STRATIFY
+    url: https://gitlab.com/iliarasskazov/stratify
+    blurb: >
+      Open-source MATLAB package for electromagnetic scattering by multilayered
+      spheres. Adopted by the light-scattering community as working tooling.
+    meta: OSA Continuum 3, 2290 (2020) - 58 citations
+
+experience:
+  - role:   "Senior R&D Engineer"
+    org:    "Tandem PV"
+    loc:    "San Jose, CA"
+    dates:  "2025 — present"
+  - role:   "Associate Editor"
+    org:    "ResearchHub Foundation"
+    loc:    "remote"
+    dates:  "2025 — present"
+  - role:   "Lead Computational Modeling & Simulation Engineer"
+    org:    "SunDensity"
+    loc:    "Rochester, NY"
+    dates:  "2023 — 2025"
+  - role:   "Research Scientist"
+    org:    "KLA"
+    loc:    "Milpitas, CA"
+    dates:  "2022 — 2023"
+  - role:   "Scientist / Postdoctoral Research Associate"
+    org:    "University of Rochester"
+    loc:    ""
+    dates:  "2018 — 2022"
+  - role:   "Postdoctoral Research Associate"
+    org:    "University of Illinois Urbana-Champaign"
+    loc:    ""
+    dates:  "2016 — 2018"
+
+education:
+  - degree: "PhD, Physics and Optics"
+    org:    "Siberian Federal University"
+    year:   "2015"
+  - degree: "MSc, Engineering Physics"
+    org:    "Siberian Federal University"
+    year:   "2011"
+  - degree: "BSc, Engineering Physics"
+    org:    "Siberian Federal University"
+    year:   "2009"
+
+service:
+  review: >
+    200+ manuscripts reviewed for Nature Portfolio, ACS, Optica, Wiley, Elsevier
+    and SAGE. Associate Editor at the ResearchHub Foundation.
+  mentoring: >
+    Co-advised PhD students at KTH (Sweden), UIUC, and Colorado School of Mines.
+
+recognition:
+  - "Invited talk, Colorado School of Mines (2024) — Numerical modeling of light-matter interactions: from theory to industrial applications"
+  - "Invited talks at Skoltech, ITMO, and KTH (×2)"
+  - "Cover articles in Analytical Chemistry (2026) and J. Phys. Chem. Letters (2021)"
+  - "Featured Article, Applied Physics Reviews; Editor's Choice, Applied Spectroscopy"
+  - "Hot Article, PCCP; most-downloaded in JQSRT and Optical Materials Express"

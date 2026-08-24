@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+_to_delete/
+
+# swept-aside files the sandbox could not unlink; safe to "rm -rf _to_delete"
+_to_delete/

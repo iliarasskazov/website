@@ -1,0 +1,351 @@
+# Full publication list. Newest first. The builder groups by year and bolds
+# "Rasskazov" in the author string automatically.
+#
+# doi: filled in by bin/fetch-dois.py (Crossref lookup). Leave "" if unresolved.
+# badges: Cover | Editor's Choice | Invited | Featured | HOT Article
+#
+# NOTE: 47 entries here vs 49 on Google Scholar. Two items are unaccounted for --
+# likely conference proceedings or a preprint not listed on the old site.
+# Reconcile against Scholar and add them.
+
+- year: 2026
+  authors: "I. L. Rasskazov, et al."
+  title: "Transfer-matrix framework for mid-infrared vibrational circular dichroism"
+  venue: "Analytical Chemistry"
+  ref: ""
+  badges: [Cover]
+  doi: ""
+
+- year: 2026
+  authors: "L. Rodrigo, I. L. Rasskazov, L. Martin-Moreno, and M. Schnell"
+  title: "Scattering correction for infrared spectra of biological cells using computational infrared microspectroscopy and deep learning"
+  venue: "arXiv preprint"
+  ref: "arXiv:2605.22503"
+  arxiv: "2605.22503"
+  doi: ""
+
+- year: 2026
+  authors: "I. L. Rasskazov, et al."
+  title: "Super-resonance across wave physics"
+  venue: "arXiv preprint"
+  ref: "arXiv:2607.19819"
+  arxiv: "2607.19819"
+  doi: ""
+
+- year: 2025
+  authors: "J. Wurm, S. T. Fujisava-Phillips, and I. L. Rasskazov"
+  title: "Optimal design of low-emissivity coatings"
+  venue: "Solar Energy Materials and Solar Cells"
+  ref: "280, 113267"
+  doi: ""
+
+- year: 2024
+  authors: "L. M. Sidor, M. M. Beaulieu, I. Rasskazov, B. C. Acarturk, J. Ren, L. Kamoen, M. V. Vitali, P. S. Carney, G. R. Schmidt, W. V. Srubar, E. A. Abbondanzieri, and A. S. Meyer"
+  title: "Engineered bacteria that self-assemble 'bioglass' polysilicate coatings display enhanced light focusing"
+  venue: "Proceedings of the National Academy of Sciences"
+  ref: "121, e2409335121"
+  doi: ""
+
+- year: 2024
+  authors: "A. Joshi and I. L. Rasskazov"
+  title: "Plasmon-enhanced downshifting and downconversion: Fundamentals and applications in photovoltaics"
+  venue: "Reviews in Physics"
+  ref: "12, 100096"
+  badges: [Invited]
+  doi: ""
+
+- year: 2024
+  authors: "A. D. Utyushev, V. I. Zakomirnyi, A. A. Shcherbakov, I. L. Rasskazov, and A. Moroz"
+  title: "Intuitive understanding of extinction of small particles in absorbing and active host media within the MLWA"
+  venue: "Journal of the Optical Society of America B"
+  ref: "41, 2519-2526"
+  doi: ""
+
+- year: 2024
+  authors: "V. I. Zakomirnyi, A. Moroz, R. Bhargava, and I. L. Rasskazov"
+  title: "Large fluorescence enhancement via lossless all-dielectric spherical mesocavities"
+  venue: "ACS Nano"
+  ref: "18, 1621-1628"
+  doi: ""
+
+- year: 2024
+  authors: "A. Utyushev, R. Gaponenko, S. Sun, A. Shcherbakov, A. Moroz, and I. L. Rasskazov"
+  title: "Generation of nearly pure and highly directional magnetic light in fluorescence of rare earth ions"
+  venue: "Physical Review B"
+  ref: "109, 045413"
+  doi: ""
+
+- year: 2023
+  authors: "L. Wang, I. L. Rasskazov, and P. S. Carney"
+  title: "Clausius-Mossotti relation revisited: Media with electric and magnetic response"
+  venue: "Optics Communications"
+  ref: "549, 129844"
+  doi: ""
+
+- year: 2023
+  authors: "R. Gaponenko, M. S. Sidorenko, D. Zhirihin, I. L. Rasskazov, A. Moroz, K. Ladutenko, P. Belov, and A. Shcherbakov"
+  title: "Experimental demonstration of superdirective spherical dielectric antenna"
+  venue: "Journal of Applied Physics"
+  ref: "134, 014901"
+  doi: ""
+
+- year: 2022
+  authors: "Y. Ji, W. Xu, I. L. Rasskazov, H. Liu, J. Hu, M. Liu, D. Zhou, X. Bai, H. Agren, and H. Song"
+  title: "Perovskite photonic crystal photoelectric devices"
+  venue: "Applied Physics Reviews"
+  ref: "9, 041319"
+  badges: [Featured]
+  doi: ""
+
+- year: 2022
+  authors: "I. L. Rasskazov, N. Sonwalkar, and P. S. Carney"
+  title: "Light scattering by plasmonic disks and holes arrays: Different or the same?"
+  venue: "Journal of Physics D: Applied Physics"
+  ref: "55, 455104"
+  doi: ""
+
+- year: 2022
+  authors: "I. L. Rasskazov and A. Moroz"
+  title: "Is there a proper figure of merit for a plasmonic structure involved in metal-enhanced fluorescence?"
+  venue: "Plasmonics"
+  ref: "17, 1091-1094"
+  doi: ""
+
+- year: 2021
+  authors: "A. D. Utyushev, V. I. Zakomirnyi, and I. L. Rasskazov"
+  title: "Collective lattice resonances: Plasmonics and beyond"
+  venue: "Reviews in Physics"
+  ref: "6, 100051"
+  badges: [Invited, Editor's Choice, Cover]
+  doi: ""
+
+- year: 2021
+  authors: "A. S. Kostyukov, I. L. Rasskazov, V. S. Gerasimov, S. P. Polyutov, S. V. Karpov, and A. E. Ershov"
+  title: "Multipolar lattice resonances in plasmonic finite-size metasurfaces"
+  venue: "Photonics"
+  ref: "8, 109"
+  doi: ""
+
+- year: 2021
+  authors: "L. Wang, I. L. Rasskazov, and P. S. Carney"
+  title: "Clustering diffused-particle method for scattering from large ensembles of electromagnetically polarizable particles"
+  venue: "Physical Review B"
+  ref: "104, 115418"
+  doi: ""
+
+- year: 2021
+  authors: "R. Gaponenko, A. Moroz, I. L. Rasskazov, K. Ladutenko, A. Shcherbakov, and P. Belov"
+  title: "Harnessing superdirectivity in dielectric spherical multilayer antennas"
+  venue: "Physical Review B"
+  ref: "104, 195406"
+  doi: ""
+
+- year: 2021
+  authors: "V. S. Gerasimov, A. E. Ershov, R. G. Bikbaev, I. L. Rasskazov, I. L. Isaev, P. N. Semina, A. S. Kostyukov, V. I. Zakomirnyi, S. P. Polyutov, and S. V. Karpov"
+  title: "Plasmonic lattice Kerker effect in ultraviolet-visible spectral range"
+  venue: "Physical Review B"
+  ref: "103, 035402"
+  doi: ""
+
+- year: 2021
+  authors: "A. S. Kostyukov, A. E. Ershov, R. G. Bikbaev, V. S. Gerasimov, I. L. Rasskazov, S. V. Karpov, and S. P. Polyutov"
+  title: "Substrate-mediated lattice Kerker effect in Al metasurfaces"
+  venue: "Journal of the Optical Society of America B"
+  ref: "38, C78-C83"
+  doi: ""
+
+- year: 2021
+  authors: "I. L. Rasskazov, A. Moroz, and P. S. Carney"
+  title: "Extraordinary fluorescence enhancement in metal-dielectric core-shell nanoparticles"
+  venue: "Journal of Physical Chemistry Letters"
+  ref: "12, 6425-6430"
+  badges: [Cover]
+  doi: ""
+
+- year: 2021
+  authors: "I. L. Rasskazov, V. I. Zakomirnyi, A. D. Utyushev, P. S. Carney, and A. Moroz"
+  title: "Remarkable predictive power of the modified long wavelength approximation"
+  venue: "Journal of Physical Chemistry C"
+  ref: "125, 1963-1971"
+  doi: ""
+
+- year: 2020
+  authors: "A. D. Utyushev, I. L. Isaev, V. S. Gerasimov, A. E. Ershov, V. I. Zakomirnyi, I. L. Rasskazov, S. P. Polyutov, H. Agren, and S. V. Karpov"
+  title: "Engineering novel tunable optical high-Q nanoparticle array filters for a wide range of wavelengths"
+  venue: "Optics Express"
+  ref: "28, 1426-1438"
+  doi: ""
+
+- year: 2020
+  authors: "I. L. Rasskazov, P. S. Carney, and A. Moroz"
+  title: "STRATIFY: a comprehensive and versatile MATLAB code for a multilayered sphere"
+  venue: "OSA Continuum"
+  ref: "3, 2290-2309"
+  software: "https://gitlab.com/iliarasskazov/stratify"
+  doi: ""
+
+- year: 2020
+  authors: "A. D. Utyushev, V. I. Zakomirnyi, A. E. Ershov, V. S. Gerasimov, S. V. Karpov, and I. L. Rasskazov"
+  title: "Collective lattice resonances in all-dielectric nanostructures under oblique incidence"
+  venue: "Photonics"
+  ref: "7, 24"
+  doi: ""
+
+- year: 2020
+  authors: "V. I. Zakomirnyi, I. L. Rasskazov, L. K. Sorensen, P. S. Carney, Z. Rinkevicius, and H. Agren"
+  title: "Plasmonic nano-shells: atomistic discrete interaction versus classic electrodynamics models"
+  venue: "Physical Chemistry Chemical Physics"
+  ref: "22, 13467-13473"
+  badges: [HOT Article]
+  doi: ""
+
+- year: 2020
+  authors: "S. Sun, I. L. Rasskazov, P. S. Carney, T. Zhang, and A. Moroz"
+  title: "Critical role of shell in enhanced fluorescence of metal-dielectric core-shell nanoparticles"
+  venue: "Journal of Physical Chemistry C"
+  ref: "124, 13365-13373"
+  doi: ""
+
+- year: 2020
+  authors: "I. L. Rasskazov, P. S. Carney, and A. Moroz"
+  title: "Intriguing branching of the maximum position of the absorption cross section in Mie theory explained"
+  venue: "Optics Letters"
+  ref: "45, 4056-4059"
+  doi: ""
+
+- year: 2019
+  authors: "I. L. Rasskazov, A. Moroz, and P. S. Carney"
+  title: "Electromagnetic energy in multilayered spherical particles"
+  venue: "Journal of the Optical Society of America A"
+  ref: "36, 1591-1601"
+  doi: ""
+
+- year: 2019
+  authors: "V. I. Zakomirnyi, S. V. Karpov, H. Agren, and I. L. Rasskazov"
+  title: "Collective lattice resonances in disordered and quasi-random all-dielectric metasurfaces"
+  venue: "Journal of the Optical Society of America B"
+  ref: "36, E21-E29"
+  doi: ""
+
+- year: 2019
+  authors: "I. L. Rasskazov, R. Singh, P. S. Carney, and R. Bhargava"
+  title: "Extended multiplicative signal correction for infrared microspectroscopy of heterogeneous samples with cylindrical domains"
+  venue: "Applied Spectroscopy"
+  ref: "73, 859-869"
+  badges: [Editor's Choice]
+  doi: ""
+
+- year: 2019
+  authors: "V. S. Gerasimov, A. E. Ershov, R. G. Bikbaev, I. L. Rasskazov, I. V. Timofeev, S. P. Polyutov, and S. V. Karpov"
+  title: "Engineering mode hybridization in regular arrays of plasmonic nanoparticles embedded in 1D photonic crystal"
+  venue: "Journal of Quantitative Spectroscopy and Radiative Transfer"
+  ref: "224, 303-308"
+  doi: ""
+
+- year: 2019
+  authors: "A. S. Kostyukov, A. E. Ershov, V. S. Gerasimov, S. A. Filimonov, I. L. Rasskazov, and S. V. Karpov"
+  title: "Super-efficient laser hyperthermia of malignant cells with core-shell nanoparticles based on alternative plasmonic materials"
+  venue: "Journal of Quantitative Spectroscopy and Radiative Transfer"
+  ref: "236, 106599"
+  doi: ""
+
+- year: 2019
+  authors: "V. I. Zakomirnyi, A. E. Ershov, V. S. Gerasimov, S. V. Karpov, H. Agren, and I. L. Rasskazov"
+  title: "Collective lattice resonances in arrays of dielectric nanoparticles: a matter of size"
+  venue: "Optics Letters"
+  ref: "44, 5743-5746"
+  badges: [Editor's Choice]
+  doi: ""
+
+- year: 2018
+  authors: "V. Zakomirnyi, I. Rasskazov, V. Gerasimov, A. Ershov, S. Polyutov, S. Karpov, and H. Agren"
+  title: "Titanium nitride nanoparticles as an alternative platform for plasmonic waveguides in the visible and telecommunication wavelength ranges"
+  venue: "Photonics and Nanostructures - Fundamentals and Applications"
+  ref: "30, 50-56"
+  doi: ""
+
+- year: 2018
+  authors: "I. L. Rasskazov, L. Wang, C. J. Murphy, R. Bhargava, and P. S. Carney"
+  title: "Plasmon-enhanced upconversion: engineering enhancement and quenching at nano and macro scales"
+  venue: "Optical Materials Express"
+  ref: "8, 3787-3804"
+  badges: [Invited]
+  doi: ""
+
+- year: 2017
+  authors: "A. E. Ershov, V. S. Gerasimov, A. P. Gavrilyuk, S. V. Karpov, V. I. Zakomirnyi, I. L. Rasskazov, and S. P. Polyutov"
+  title: "Thermal limiting effects in optical plasmonic waveguides"
+  venue: "Journal of Quantitative Spectroscopy and Radiative Transfer"
+  ref: "191, 1-6"
+  doi: ""
+
+- year: 2017
+  authors: "V. S. Gerasimov, A. E. Ershov, S. V. Karpov, A. P. Gavrilyuk, V. I. Zakomirnyi, I. L. Rasskazov, H. Agren, and S. P. Polyutov"
+  title: "Thermal effects in systems of colloidal plasmonic nanoparticles in high-intensity pulsed laser fields"
+  venue: "Optical Materials Express"
+  ref: "7, 555-568"
+  badges: [Invited]
+  doi: ""
+
+- year: 2017
+  authors: "V. I. Zakomirnyi, I. L. Rasskazov, V. S. Gerasimov, A. E. Ershov, S. P. Polyutov, and S. V. Karpov"
+  title: "Refractory titanium nitride two-dimensional structures with extremely narrow surface lattice resonances at telecommunication wavelengths"
+  venue: "Applied Physics Letters"
+  ref: "111, 123107"
+  doi: ""
+
+- year: 2017
+  authors: "V. I. Zakomirnyi, I. L. Rasskazov, S. V. Karpov, and S. P. Polyutov"
+  title: "New ideally absorbing Au plasmonic nanostructures for biomedical applications"
+  venue: "Journal of Quantitative Spectroscopy and Radiative Transfer"
+  ref: "187, 54-61"
+  doi: ""
+
+- year: 2017
+  authors: "I. L. Rasskazov, N. Spegazzini, P. S. Carney, and R. Bhargava"
+  title: "Dielectric sphere clusters as a model to understand infrared spectroscopic imaging data recorded from complex samples"
+  venue: "Analytical Chemistry"
+  ref: "89, 10813-10818"
+  doi: ""
+
+- year: 2016
+  authors: "I. L. Rasskazov, S. V. Karpov, G. Y. Panasyuk, and V. A. Markel"
+  title: "Overcoming the adverse effects of substrate on the waveguiding properties of plasmonic nanoparticle chains"
+  venue: "Journal of Applied Physics"
+  ref: "119, 043101"
+  doi: ""
+
+- year: 2014
+  authors: "I. L. Rasskazov, S. V. Karpov, and V. A. Markel"
+  title: "Waveguiding properties of short linear chains of nonspherical metal nanoparticles"
+  venue: "Journal of the Optical Society of America B"
+  ref: "31, 2981-2989"
+  doi: ""
+
+- year: 2014
+  authors: "I. L. Rasskazov, S. V. Karpov, and V. A. Markel"
+  title: "Surface plasmon polaritons in curved chains of metal nanoparticles"
+  venue: "Physical Review B"
+  ref: "90, 075405"
+  doi: ""
+
+- year: 2013
+  authors: "I. L. Rasskazov, S. V. Karpov, and V. A. Markel"
+  title: "Nondecaying surface plasmon polaritons in linear chains of silver nanospheroids"
+  venue: "Optics Letters"
+  ref: "38, 4743-4746"
+  doi: ""
+
+- year: 2013
+  authors: "S. V. Karpov and I. L. Rasskazov"
+  title: "Simulation of conditions for fabrication of optical nanowaveguides in the form of chains of spherical metal nanoparticles by electrostatic functionalization of the process substrate"
+  venue: "Colloid Journal"
+  ref: "75, 279-288"
+  doi: ""
+
+- year: 2013
+  authors: "I. L. Rasskazov, V. A. Markel, and S. V. Karpov"
+  title: "Transmission and spectral properties of short optical plasmon waveguides"
+  venue: "Optics and Spectroscopy"
+  ref: "115, 666-674"
+  doi: ""

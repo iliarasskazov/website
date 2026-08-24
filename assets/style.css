@@ -1,0 +1,186 @@
+/* iliarasskazov.com — hand-written, no framework, no external requests. */
+
+:root {
+  --bg:        #fdfdfc;
+  --surface:   #f6f5f2;
+  --ink:       #1a1a18;
+  --muted:     #5f5f58;
+  --faint:     #8a8a82;
+  --accent:    #1b3a5c;
+  --accent-bg: #eaeff5;
+  --rule:      #e4e2dc;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
+  --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --measure: 40rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:        #131417;
+    --surface:   #1a1c20;
+    --ink:       #e9e7e2;
+    --muted:     #a2a29b;
+    --faint:     #7b7b74;
+    --accent:    #92b6dc;
+    --accent-bg: #1c2733;
+    --rule:      #2a2c31;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+/* ---- masthead ---- */
+.masthead {
+  border-bottom: 1px solid var(--rule);
+  padding: 1rem 0;
+  margin-bottom: 3.5rem;
+}
+.masthead .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.masthead .who { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+.masthead nav { display: flex; gap: 1.25rem; font-size: .9rem; }
+.masthead nav a { color: var(--muted); text-decoration: none; }
+.masthead nav a:hover, .masthead nav a[aria-current] { color: var(--accent); }
+
+/* ---- hero ---- */
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.1rem, 6vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -.015em;
+  margin: 0 0 .5rem;
+  font-weight: 600;
+}
+.hero .role { color: var(--muted); font-size: 1.02rem; margin: 0 0 1.75rem; }
+.hero .role .dot { color: var(--rule); padding: 0 .45rem; }
+.lede {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 3.2vw, 1.5rem);
+  line-height: 1.45;
+  margin: 0 0 1.75rem;
+  max-width: var(--measure);
+}
+.linkrow { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 3rem; }
+.linkrow a {
+  font-size: .875rem;
+  text-decoration: none;
+  color: var(--accent);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: .3rem .85rem;
+  transition: background .15s, border-color .15s;
+}
+.linkrow a:hover { background: var(--accent-bg); border-color: var(--accent); }
+
+/* ---- metrics ---- */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 3.5rem;
+}
+.metrics div { background: var(--bg); padding: 1rem .9rem; }
+.metrics .v { font-family: var(--serif); font-size: 1.6rem; line-height: 1.1; display: block; }
+.metrics .l { font-size: .76rem; color: var(--faint); text-transform: uppercase; letter-spacing: .06em; }
+@media (max-width: 34rem) { .metrics { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- sections ---- */
+section { margin-bottom: 3.25rem; }
+h2 {
+  font-family: var(--sans);
+  font-size: .76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--faint);
+  margin: 0 0 1.1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--rule);
+}
+p { max-width: var(--measure); }
+
+/* ---- software cards ---- */
+.card { border-left: 2px solid var(--rule); padding-left: 1.1rem; margin-bottom: 1.75rem; }
+.card:hover { border-left-color: var(--accent); }
+.card h3 { font-family: var(--serif); font-size: 1.2rem; margin: 0 0 .3rem; font-weight: 600; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.card p { margin: .3rem 0; }
+.card .meta { font-family: var(--mono); font-size: .78rem; color: var(--faint); }
+
+/* ---- rows (experience, education) ---- */
+.row { display: flex; gap: 1rem; justify-content: space-between; padding: .55rem 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+.row:last-child { border-bottom: 0; }
+.row .what { font-weight: 600; }
+.row .where { color: var(--muted); font-size: .95rem; }
+.row .when { color: var(--faint); font-size: .85rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 34rem) { .row { flex-direction: column; gap: .15rem; } }
+
+/* ---- publications ---- */
+.pub { padding: .8rem 0; border-bottom: 1px solid var(--rule); }
+.pub:last-child { border-bottom: 0; }
+.pub .t { font-family: var(--serif); font-size: 1.06rem; line-height: 1.4; }
+.pub .t a { text-decoration: none; }
+.pub .t a:hover { text-decoration: underline; }
+.pub .a { font-size: .87rem; color: var(--muted); margin-top: .15rem; }
+.pub .a b { color: var(--ink); font-weight: 600; }
+.pub .v { font-size: .87rem; color: var(--faint); font-style: italic; margin-top: .1rem; }
+.badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: .68rem;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border-radius: 3px;
+  padding: .1rem .4rem;
+  margin-left: .35rem;
+  vertical-align: 1px;
+}
+.year {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  color: var(--faint);
+  margin: 2.25rem 0 .35rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--rule);
+  font-variant-numeric: tabular-nums;
+}
+.year:first-of-type { margin-top: .5rem; }
+
+ul.plain { list-style: none; padding: 0; margin: 0; max-width: var(--measure); }
+ul.plain li { padding: .35rem 0; padding-left: 1rem; text-indent: -1rem; }
+ul.plain li::before { content: "—"; color: var(--rule); padding-right: .5rem; }
+
+/* ---- footer ---- */
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 4rem;
+  padding: 1.75rem 0 3rem;
+  font-size: .875rem;
+  color: var(--faint);
+}
+footer a { color: var(--muted); }
