@@ -9,12 +9,12 @@
 # Reconcile against Scholar and add them.
 
 - year: 2026
-  authors: "I. L. Rasskazov, et al."
-  title: "Transfer-matrix framework for mid-infrared vibrational circular dichroism"
+  authors: "A. Utyushev, I. L. Rasskazov, and Y. Phal"
+  title: "Transfer-Matrix Framework for Modeling Mid-Infrared Vibrational Circular Dichroism Spectra"
   venue: "Analytical Chemistry"
-  ref: ""
+  ref: "98, 10584-10593"
   badges: [Cover]
-  doi: ""
+  doi: "10.1021/acs.analchem.5c07726"
 
 - year: 2026
   authors: "L. Rodrigo, I. L. Rasskazov, L. Martin-Moreno, and M. Schnell"
@@ -197,7 +197,7 @@
   venue: "Physical Chemistry Chemical Physics"
   ref: "22, 13467-13473"
   badges: [HOT Article]
-  doi: ""
+  doi: "10.1039/d0cp02248a"
 
 - year: 2020
   authors: "S. Sun, I. L. Rasskazov, P. S. Carney, T. Zhang, and A. Moroz"
