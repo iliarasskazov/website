@@ -21,7 +21,8 @@ links:
   - {label: multilayer.app, url: "https://multilayer.app"}
 
 # scope: both = home + publications page; home = home page only.
-# value/updated for the first three are rewritten by bin/update-metrics.py.
+# Updated by hand. Cross-check against career/data/profile.yml with:
+#   python3 ../career/bin/sync-site.py --check
 metrics:
   - {value: "49",    label: publications, scope: both}
   - {value: "1,187", label: citations,    scope: both}
@@ -31,7 +32,7 @@ metrics:
 metrics_source:
   label: Google Scholar
   url: "https://scholar.google.com/citations?user=jCpbgOEAAAAJ"
-  updated: null        # ISO date, stamped automatically when metrics refresh
+  updated: null        # optional ISO date, e.g. "2026-08-24"; shown after the credit
 
 lede: >
   I build the simulation software that scientific and engineering teams make
