@@ -37,8 +37,8 @@ def main():
 
     for p in pubs[start:start + limit]:
         t = p["title"]
-        if t in known or p.get("doi") or p.get("arxiv"):
-            continue
+        if (known.get(t) or {}).get("doi") or p.get("doi") or p.get("arxiv"):
+            continue   # already resolved; nulls are retried
         try:
             items = query(t)
         except Exception as e:
