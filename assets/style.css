@@ -43,6 +43,9 @@ body {
 }
 
 .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
+/* the publications list packs into fewer lines with more measure */
+body.wide .wrap { max-width: 58rem; }
+body.wide .pub .t { font-size: 1.02rem; }
 
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
 a:hover { text-decoration-thickness: 2px; }

@@ -57,7 +57,7 @@ def render_pub(p, dois):
             f'<div class="v">{e(p["venue"])}{ref} ({p["year"]}){extra}</div>'
             f'</div>')
 
-def page(title, body, nav_here, desc, repo=None):
+def page(title, body, nav_here, desc, repo=None, body_class=""):
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -74,7 +74,7 @@ def page(title, body, nav_here, desc, repo=None):
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9788;</text></svg>">
 </head>
-<body>
+<body class="{body_class}">
 <header class="masthead"><div class="wrap">
   <a class="who" href="index.html">Ilia L. Rasskazov</a>
   <nav>
@@ -103,8 +103,11 @@ def build():
 
     # ---------------- home ----------------
     links = "".join(f'<a href="{l["url"]}">{e(l["label"])}</a>' for l in s["links"])
-    metrics = "".join(f'<div><span class="v">{e(m["value"])}</span>'
-                      f'<span class="l">{e(m["label"])}</span></div>' for m in s["metrics"])
+    def metric_cells(scope):
+        keep = [m for m in s["metrics"] if scope == "home" or m.get("scope", "both") != "home"]
+        return "".join(f'<div><span class="v">{e(m["value"])}</span>'
+                       f'<span class="l">{e(m["label"])}</span></div>' for m in keep)
+    metrics = metric_cells("home")
     about = "".join(f"<p>{typo(p.strip())}</p>" for p in s["about"])
     software = "".join(
         f'<div class="card"><h3><a href="{c["url"]}">{e(c["name"])}</a></h3>'
@@ -150,12 +153,14 @@ def build():
     plist = "".join(
         f'<div class="year">{y}</div>' + "".join(render_pub(p, dois) for p in by_year[y])
         for y in order)
-    m = s["metrics"]
-    strip = " \u00b7 ".join(f"{x['value']} {x['label']}" for x in m)
+    src = s.get("metrics_source") or {}
+    stamp = f' &middot; updated {e(src["updated"])}' if src.get("updated") else ""
+    credit = (f'Metrics from <a href="{src["url"]}">{e(src["label"])}</a>.{stamp}'
+              if src.get("url") else "")
+    shown = [x for x in s["metrics"] if x.get("scope", "both") != "home"]
+    strip = " \u00b7 ".join(f"{x['value']} {x['label']}" for x in shown)
     pubs_page = f"""<div class="hero"><h1>Publications</h1>
-  <p class="role">{e(strip)}</p>
-  <p class="lede" style="font-size:1.05rem">Complete list, newest first. Metrics from
-  <a href="https://scholar.google.com/citations?user=jCpbgOEAAAAJ">Google Scholar</a>.</p></div>
+  <p class="role">{e(strip)}{f'<span class="dot">&bull;</span>{credit}' if credit else ''}</p></div>
 {plist}"""
 
     os.makedirs(OUT, exist_ok=True)
@@ -163,7 +168,8 @@ def build():
         f.write(page(f"{s['name']} — {s['role_line']}", home, "home", s["lede"].strip(), s.get("repo_url")))
     with open(os.path.join(OUT, "publications.html"), "w", encoding="utf-8") as f:
         f.write(page(f"Publications — {s['name']}", pubs_page, "pubs",
-                     f"{len(pubs)} peer-reviewed publications by Ilia L. Rasskazov.", s.get("repo_url")))
+                     f"{len(pubs)} peer-reviewed publications by Ilia L. Rasskazov.",
+                     s.get("repo_url"), body_class="wide"))
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"), dirs_exist_ok=True)
     open(os.path.join(OUT, ".nojekyll"), "w").close()
     with open(os.path.join(OUT, "CNAME"), "w") as f:

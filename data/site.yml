@@ -20,11 +20,18 @@ links:
   - {label: GitLab,         url: "https://gitlab.com/iliarasskazov"}
   - {label: multilayer.app, url: "https://multilayer.app"}
 
+# scope: both = home + publications page; home = home page only.
+# value/updated for the first three are rewritten by bin/update-metrics.py.
 metrics:
-  - {value: "49",    label: publications}
-  - {value: "1,187", label: citations}
-  - {value: "21",    label: h-index}
-  - {value: "200+",  label: peer reviews}
+  - {value: "49",    label: publications, scope: both}
+  - {value: "1,187", label: citations,    scope: both}
+  - {value: "21",    label: h-index,      scope: both}
+  - {value: "200+",  label: peer reviews, scope: home}
+
+metrics_source:
+  label: Google Scholar
+  url: "https://scholar.google.com/citations?user=jCpbgOEAAAAJ"
+  updated: null        # ISO date, stamped automatically when metrics refresh
 
 lede: >
   I build the simulation software that scientific and engineering teams make

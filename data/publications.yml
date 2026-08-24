@@ -116,8 +116,8 @@
   title: "Collective lattice resonances: Plasmonics and beyond"
   venue: "Reviews in Physics"
   ref: "6, 100051"
-  badges: [Invited, Editor's Choice, Cover]
-  doi: ""
+  badges: [Invited, Editor's Choice]
+  doi: "10.1016/j.revip.2021.100051"
 
 - year: 2021
   authors: "A. S. Kostyukov, I. L. Rasskazov, V. S. Gerasimov, S. P. Polyutov, S. V. Karpov, and A. E. Ershov"
@@ -254,8 +254,7 @@
   title: "Collective lattice resonances in arrays of dielectric nanoparticles: a matter of size"
   venue: "Optics Letters"
   ref: "44, 5743-5746"
-  badges: [Editor's Choice]
-  doi: ""
+  doi: "10.1364/ol.44.005743"
 
 - year: 2018
   authors: "V. Zakomirnyi, I. Rasskazov, V. Gerasimov, A. Ershov, S. Polyutov, S. Karpov, and H. Agren"
@@ -269,8 +268,7 @@
   title: "Plasmon-enhanced upconversion: engineering enhancement and quenching at nano and macro scales"
   venue: "Optical Materials Express"
   ref: "8, 3787-3804"
-  badges: [Invited]
-  doi: ""
+  doi: "10.1364/ome.8.003787"
 
 - year: 2017
   authors: "A. E. Ershov, V. S. Gerasimov, A. P. Gavrilyuk, S. V. Karpov, V. I. Zakomirnyi, I. L. Rasskazov, and S. P. Polyutov"
