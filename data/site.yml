@@ -17,7 +17,6 @@ repo_url: null
 links:
   - {label: Google Scholar, url: "https://scholar.google.com/citations?user=jCpbgOEAAAAJ"}
   - {label: LinkedIn,       url: "https://linkedin.com/in/iliarasskazov"}
-  - {label: GitLab,         url: "https://gitlab.com/iliarasskazov"}
   - {label: multilayer.app, url: "https://multilayer.app"}
 
 # scope: both = home + publications page; home = home page only.
